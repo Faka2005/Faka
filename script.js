@@ -19,7 +19,7 @@ document.querySelector('#Erreur').innerHTML = "Aide toi des noms en rouge sur le
 function aller() {
   var valeur = document.getElementById("monChamp").value;
   var Page1 = "Page sur ";
-  var Prophete = document.getElementById("Prophete");
+  var Biographie = document.getElementById("Biographie");
   var Juzz = document.getElementById("Juzz");
   var Sourate = document.getElementById("Sourate");
   var Flashcard = document.getElementById("Flashcard");
@@ -29,7 +29,7 @@ function aller() {
   var Livre = document.getElementById("Livre");
   var Tadjweed=document.getElementById("#Tadjweed");
   // Masquer tous les éléments
-  Prophete.style.display = "none";
+  Biographie.style.display = "none";
   Juzz.style.display = "none";
   Sourate.style.display = "none";
   Ecouter.style.display = "none";
@@ -40,12 +40,11 @@ function aller() {
   
       
   // Afficher l'élément correspondant
-  if (valeur === "Prophete"){
-    Prophete.style.display = "block";
+  if (valeur === "Biographie"){
+    Biographie.style.display = "block";
     var nom = valeur;
     var message = Page1;
-    var titre = message + nom;
-    document.querySelector('#Titre').innerHTML = titre;
+    document.querySelector('#Titre').innerHTML = "Biographie des prophete";
     document.querySelector('#Erreur').innerHTML = "";
   } 
   else if (valeur === "Juzz"){
