@@ -79,43 +79,11 @@ h1 {
 body{
   font-family: Arial, sans-serif;
 }
-.card {
-  background-color: white;
-  border: 1px solid black;
-  padding: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-.card:hover {
-  background-color: #f1f1f1;
-}
-.question {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-.answer {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-.show-answer-button {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-.show-answer-button:hover {
-  background-color: #3e8e41;
+#body{
+  margin-left:25%;
+  padding:1px 16px;
+  height:1000px;
 }
 table,th,td{
-  border:1px solid #cccccc
+  border:1px solid #cccccc;
 }

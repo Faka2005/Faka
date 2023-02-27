@@ -5,42 +5,7 @@ document.getElementById("Presentation").innerHTML =Presentation;
 document.getElementById("Titre").innerHTML =titre ;
 
 
-// Charger les éléments de la liste depuis le stockage local
-var items = JSON.parse(localStorage.getItem("items")) || [];
 
-// Ajouter les éléments à la liste
-var list = document.getElementById("myList");
-for (var i = 0; i < items.length; i++) {
-  var li = document.createElement("li");
-  li.textContent = items[i];
-  list.appendChild(li);
-}
-
-// Fonction pour ajouter un élément à la liste
-function addItem() {
-  var newItem = document.getElementById("newItem").value;
-  items.push(newItem);
-  localStorage.setItem("items", JSON.stringify(items));
-  var li = document.createElement("li");
-  li.textContent = newItem;
-  list.appendChild(li);
-}
-
-// Fonction pour supprimer un élément de la liste
-function removeItem() {
-  var itemToRemove = document.getElementById("itemToRemove").value;
-  items = items.filter(function(item) {
-    return item !== itemToRemove;
-  });
-  localStorage.setItem("items", JSON.stringify(items));
-  var lis = document.querySelectorAll("#myList li");
-  for (var i = 0; i < lis.length; i++) {
-    if (lis[i].textContent === itemToRemove) {
-      lis[i].parentNode.removeChild(lis[i]);
-      break;
-    }
-  }
-}
 
 
 //Afficchage d'erreur dans le champ
@@ -59,19 +24,23 @@ function aller() {
   var Sourate = document.getElementById("Sourate");
   var Flashcard = document.getElementById("Flashcard");
   var Button = document.getElementById("new-card-button");
-  var Afficchage = document.getElementById("Affichage")
-      
+  var Ecouter = document.getElementById("Ecouter");
+  var Histoire = document.getElementById("Histoire") ; 
+  var Livre = document.getElementById("Livre");
+  var Tadjweed=document.getElementById("#Tadjweed");
   // Masquer tous les éléments
   Prophete.style.display = "none";
   Juzz.style.display = "none";
   Sourate.style.display = "none";
-  Flashcard.style.display = "none";
+  Ecouter.style.display = "none";
   Button.style.display = "none";
-  Afficchage.style.display = "none";
+  Histoire.style.display = "none";
+  Livre.style.display="none";
+  Tadjweed.style.display="none";
   
       
   // Afficher l'élément correspondant
-  if (valeur === "Prophete") {
+  if (valeur === "Prophete"){
     Prophete.style.display = "block";
     var nom = valeur;
     var message = Page1;
@@ -79,7 +48,7 @@ function aller() {
     document.querySelector('#Titre').innerHTML = titre;
     document.querySelector('#Erreur').innerHTML = "";
   } 
-  else if (valeur === "Juzz") {
+  else if (valeur === "Juzz"){
     Juzz.style.display = "block";
     var nom = valeur;
     var message = Page1;
@@ -87,7 +56,7 @@ function aller() {
     document.querySelector('#Titre').innerHTML = titre;
     document.querySelector('#Erreur').innerHTML = "";
   }
-  else if (valeur === "Sourate") {
+  else if (valeur === "Sourate"){
     Sourate.style.display = "block";
     var nom = valeur;
     var message = Page1;
@@ -95,22 +64,39 @@ function aller() {
     document.querySelector('#Titre').innerHTML = titre;
     document.querySelector('#Erreur').innerHTML = "";
   }
-  else if (valeur === "Flashcard") {
-    Flashcard.style.display = "block";
+  else if (valeur === "Livre"){
+    Livre.style.display = "block";
     Button.style.display = "block";
     var nom = valeur;
     var message = Page1;
     var titre = message + nom;
-    document.querySelector('#Titre').innerHTML = "Revisions";
+    document.querySelector('#Titre').innerHTML = titre;
     document.querySelector('#Erreur').innerHTML = "";
   }
-  else if (valeur === "Affichage") {
-    Afficchage.style.display = "block";
+  else if (valeur === "Ecouter"){
+    Ecouter.style.display = "block";
     Button.style.display = "block";
     var nom = valeur;
     var message = Page1;
-    document.querySelector('#Titre').innerHTML = "Ajouter et Supprimer li";
+    var titre = message + nom;
+    document.querySelector('#Titre').innerHTML = titre;
     document.querySelector('#Erreur').innerHTML = "";
+  }
+  else if(valeur==="Histoire"){
+    Histoire.style.display="none";
+    var nom=valeur;
+    var message=Page1;
+    var titre = message + nom;
+    document.querySelector(#Titre).innerHTML=titre;
+    document.querySelector("#Erreur")="";
+  }
+  else if (valeur==="Tadjweed"){
+    Tadjweed.style.display="none";
+    var nom=valeur;
+    var message=Page1;
+    var titre = message + nom;
+    document.querySelector(#Titre).innerHTML=titre;
+    document.querySelector("#Erreur")="";
   }
   else {
     afficherErreur();
