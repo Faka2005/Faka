@@ -87,3 +87,21 @@ body{
 table,th,td{
   border:1px solid #cccccc;
 }
+#parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px; /* Ajoute de l'espace entre les éléments enfants */
+}
+.child {
+  width: calc(33.33% - 20px); /* Tous les éléments enfants ont la même taille fixe */
+  background-color: gold;
+  padding: 20px;
+  box-sizing: border-box;
+  color: gold;
+}
+.nom {
+  color: red;
+  text-align: center;
+}

@@ -29,7 +29,7 @@ function aller() {
   var Livre = document.getElementById("Livre");
   var Tadjweed=document.getElementById("#Tadjweed");
   // Masquer tous les éléments
-  Biographie.style.display = "none";
+  Prophete.style.display = "none";
   Juzz.style.display = "none";
   Sourate.style.display = "none";
   Ecouter.style.display = "none";
@@ -40,11 +40,11 @@ function aller() {
   
       
   // Afficher l'élément correspondant
-  if (valeur === "Biographie"){
-    Biographie.style.display = "block";
+  if (valeur === "Prophete"){
+    Prophete.style.display = "block";
     var nom = valeur;
     var message = Page1;
-    document.querySelector('#Titre').innerHTML = "Biographie des prophete";
+    document.querySelector('#Titre').innerHTML = "les Prophete";
     document.querySelector('#Erreur').innerHTML = "";
   } 
   else if (valeur === "Juzz"){
