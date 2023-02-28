@@ -1,103 +1,23 @@
-const Presentation = "ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ!"
-const titre = "Welcome"
+const message = 'ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ!' // Try edit me
+const message2="Welcome"
+// Update header text
+document.querySelector('#Presentation').innerHTML = message;
+document.querySelector('#titre').innerHTML = message2;
 
-document.getElementById("Presentation").innerHTML =Presentation;
-document.getElementById("Titre").innerHTML =titre ;
-
-
-
-
-
-//Afficchage d'erreur dans le champ
-function afficherErreur() {
-document.querySelector('#Erreur').innerHTML = "Aide toi des noms en rouge sur le côté";
-}
-
-
-
-//Fonction Page
-function aller() {
+//Fonction qui active les Div
+function AffichePage() {
+  // Récupérer la valeur saisie dans le champ
   var valeur = document.getElementById("monChamp").value;
-  var Page1 = "Page sur ";
-  var Biographie = document.getElementById("Biographie");
-  var Juzz = document.getElementById("Juzz");
-  var Sourate = document.getElementById("Sourate");
-  var Flashcard = document.getElementById("Flashcard");
-  var Button = document.getElementById("new-card-button");
-  var Ecouter = document.getElementById("Ecouter");
-  var Histoire = document.getElementById("Histoire") ; 
-  var Livre = document.getElementById("Livre");
-  var Tadjweed=document.getElementById("#Tadjweed");
-  // Masquer tous les éléments
-  Prophete.style.display = "none";
-  Juzz.style.display = "none";
-  Sourate.style.display = "none";
-  Ecouter.style.display = "none";
-  Button.style.display = "none";
-  Histoire.style.display = "none";
-  Livre.style.display="none";
-  Tadjweed.style.display="none";
   
-      
-  // Afficher l'élément correspondant
-  if (valeur === "Prophete"){
-    Prophete.style.display = "block";
-    var nom = valeur;
-    var message = Page1;
-    document.querySelector('#Titre').innerHTML = "les Prophete";
-    document.querySelector('#Erreur').innerHTML = "";
-  } 
-  else if (valeur === "Juzz"){
-    Juzz.style.display = "block";
-    var nom = valeur;
-    var message = Page1;
-    var titre = message + nom;
-    document.querySelector('#Titre').innerHTML = titre;
-    document.querySelector('#Erreur').innerHTML = "";
+  // Masquer toutes les div
+  var divs = document.getElementsByClassName("maDiv");
+  for (var i = 0; i < divs.length; i++) {
+    divs[i].style.display = "none";
   }
-  else if (valeur === "Sourate"){
-    Sourate.style.display = "block";
-    var nom = valeur;
-    var message = Page1;
-    var titre = message + nom;
-    document.querySelector('#Titre').innerHTML = titre;
-    document.querySelector('#Erreur').innerHTML = "";
-  }
-  else if (valeur === "Livre"){
-    Livre.style.display = "block";
-    Button.style.display = "block";
-    var nom = valeur;
-    var message = Page1;
-    var titre = message + nom;
-    document.querySelector('#Titre').innerHTML = titre;
-    document.querySelector('#Erreur').innerHTML = "";
-  }
-  else if (valeur === "Ecouter"){
-    Ecouter.style.display = "block";
-    Button.style.display = "block";
-    var nom = valeur;
-    var message = Page1;
-    var titre = message + nom;
-    document.querySelector('#Titre').innerHTML = titre;
-    document.querySelector('#Erreur').innerHTML = "";
-  }
-  else if(valeur==="Histoire"){
-    Histoire.style.display="none";
-    var nom=valeur;
-    var message=Page1;
-    var titre = message + nom;
-    document.querySelector(#Titre).innerHTML=titre;
-    document.querySelector("#Erreur")="";
-  }
-  else if (valeur==="Tadjweed"){
-    Tadjweed.style.display="none";
-    var nom=valeur;
-    var message=Page1;
-    var titre = message + nom;
-    document.querySelector(#Titre).innerHTML=titre;
-    document.querySelector("#Erreur")="";
-  }
-  else {
-    afficherErreur();
+  
+  // Afficher la div correspondante
+  var divAffichee = document.getElementById(valeur);
+  if (divAffichee) {
+    divAffichee.style.display = "block";
   }
 }

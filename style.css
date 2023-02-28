@@ -1,110 +1,120 @@
-#Titre {
-    background: transparent; /* Make it white if you need */
-    color: #fcbe24;
-    padding: 0 24px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+#titre {
+  background: transparent; /* Make it white if you need */
+  color: #fcbe24;
+  padding: 0 24px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #p1{
-    height: 100vh;
-    background: transparent; /* Make it white if you need */
-    color: #fcbe24;
-    padding: 0 24px;
-    margin: 0;
-    justify-content: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 100vh;
+  background: transparent; /* Make it white if you need */
+  color: #fcbe24;
+  padding: 0 24px;
+  margin: 0;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-input[type="text"] {
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
+#monChamp{
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
 }
 #magique{
-    background-color: black;
-    color: white;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
 }
 .h1 {
-    background: transparent; /* Make it white if you need */
-    color: #fcbe24;
-    padding: 0 24px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: transparent; /* Make it white if you need */
+  color: #fcbe24;
+  padding: 0 24px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #formulaire{
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 label {
-  display: block;
-  margin-bottom: 10px;
+display: block;
+margin-bottom: 10px;
 }
 #myList {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 25%;
-  background-color: black;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 25%;
+background-color: black;
+position: fixed;
+height: 100%;
+overflow: auto;
 }
 li  {
-  display: block;
-  color: red;
-  padding: 8px 0 8px 16px;
-  text-decoration: none;
+display: block;
+color: red;
+padding: 8px 0 8px 16px;
+text-decoration: none;
 }
 h1 {
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 20px;
-}
-#Erreur{
-  color: red;
+text-align: center;
+font-size: 24px;
+font-weight: bold;
+margin-top: 20px;
 }
 body{
-  font-family: Arial, sans-serif;
-}
-#body{
-  margin-left:25%;
-  padding:1px 16px;
-  height:1000px;
+font-family: Arial, sans-serif;
 }
 table,th,td{
-  border:1px solid #cccccc;
+border:1px solid #cccccc
 }
 #parent {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px; /* Ajoute de l'espace entre les éléments enfants */
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+gap: 20px; /* Ajoute de l'espace entre les éléments enfants */
 }
 .child {
-  width: calc(33.33% - 20px); /* Tous les éléments enfants ont la même taille fixe */
-  background-color: gold;
-  padding: 20px;
-  box-sizing: border-box;
-  color: gold;
+width: calc(33.33% - 20px); /* Tous les éléments enfants ont la même taille fixe */
+background-color: gold;
+padding: 20px;
+box-sizing: border-box;
+color: gold;
 }
 .nom {
-  color: red;
-  text-align: center;
+color: red;
+text-align: center;
 }
-#Prophete,#Juzz,#Sourate,#Histoire,#Tadjweed,#Ecouter,#Livre{
-  display: none;
+#body{
+margin-left:25%;padding:1px 16px;height:1000px;
+}
+#Erreur{
+color: red;
+}
+#Prophete,#Juzz,#Sourate,#Livre{
+display: none;
+}
+th{
+width:  200000px;
+}
+table {
+height: 2000px; 
+
+}
+.millieu{
+display: flex;
+justify-content: space-between;
+align-items: center;
 }

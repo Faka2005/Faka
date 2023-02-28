@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Page entier en Js</title>
+    <link rel="stylesheet" href="src/style.css">
   </head>
-  <body>  
+  <body>
     <ul id="myList">
       <li>Prophete</li>
       <li>Juzz</li>
@@ -16,14 +15,13 @@
       <li>Ecouter</li>
       <li>Livre</li>
     </ul><br>
-    <div id="body" style="margin-left:25%;padding:1px 16px;height:1000px;">
-      <h1 id="Titre"></h1>
+    <div id="body">
+      <h1 id="titre"></h1>
       <h1 id="Presentation"></h1>
-      <div id="Erreur" style="color: red;"></div>
-      <input type="text" id="monChamp" placeholder="Entrez votre choix...">
-      <button onclick="aller()" id="magique">Aller</button>
+      <input type="text" id="monChamp" placeholder="Entrez votre choix..." name="monChamp">
+      <button onclick="AffichePage()" id="magique">Aller</button>
       
-      <div id="Prophete" style="display: none;">
+      <div class="maDiv" id="Prophete" >
         <div id="parent" >
           <div class="child">
             <p class="nom">آدَم(Adam)</p>
@@ -103,19 +101,17 @@
       </div>
       
       </div>
+      <div class="maDiv" id="Juzz" >
       
-      <div id="Juzz" style="display: none;">
-      
-    </div>
-      
-      <div id="Sourate" style="display: none;">
+      </div>
+      <div class="maDiv" id="Sourate" >
         <h2>Sourate</h2>
-      <table style="height: 2000px;" weight="200000px">
+      <table >
           <tr>
-            <th style="width:  200000px;">Sourate</th>
-            <th style="width:  200000px;">Début</th>
-            <th style="width:  200000px;">Fin</th>
-            <th style="width:  200000px;">Nombre de ayat</th>
+            <th >Sourate</th>
+            <th >Début</th>
+            <th >Fin</th>
+            <th >Nombre de ayat</th>
           </tr>
           <tr>
             <td > الفاتحة</td>
@@ -765,7 +761,7 @@
           </tr>   <tr>
             <td>النصر</td>
             <td>
-    إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ</td>
+            </td>إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ</td>
             <td>فَسَبِّحْ بِحَمْدِ رَبِّكَ وَٱسْتَغْفِرْهُ ۚ إِنَّهُۥ كَانَ تَوَّابًۢا</td>
             <td>3</td>
           </tr>
@@ -793,25 +789,22 @@
           </tr>
         </table>
       </div>
-      
-    
-      <div id="Livre" style="display:none;">
+      <div class="maDiv" id="Livre" >
         
       </div>
-      
-      
-      
-      <div id="Histoire" style="display:none;">
+      <div class="maDiv" id="Histoire" >
       
       </div>
-      <div id="Ecouter" style="display:none;">
+      <div class="maDiv" id="Ecouter" >
       
       </div>
-      <div id="Tadjweed" style="display:none;">
+      <div class="maDiv" id="Tadjweed" >
       
       </div>
    
-  </div>
-  <script src="script.js"></script>
+    </div>
+<script src="script.js" >
+ 
+</script>
   </body>
 </html>
