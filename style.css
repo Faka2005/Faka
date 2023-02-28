@@ -105,3 +105,6 @@ table,th,td{
   color: red;
   text-align: center;
 }
+#Prophete,#Juzz,#Sourate,#Histoire,#Tadjweed,#Ecouter,#Livre{
+  display: none;
+}
