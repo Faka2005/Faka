@@ -1,4 +1,4 @@
-#titre {
+#titre  ,#Histoire,#Ecouter,#Juzz,#Livre,#Sourate,#Prophete,#Tadjweed{
   background: transparent; /* Make it white if you need */
   color: #fcbe24;
   padding: 0 24px;
@@ -42,10 +42,6 @@
   display: flex;
   justify-content: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-#formulaire{
-  display: flex;
-  justify-content: center;
 }
 label {
 display: block;
@@ -100,12 +96,6 @@ text-align: center;
 #body{
 margin-left:25%;padding:1px 16px;height:1000px;
 }
-#Erreur{
-color: red;
-}
-#Prophete,#Juzz,#Sourate,#Livre{
-display: none;
-}
 th{
 width:  200000px;
 }
@@ -117,4 +107,30 @@ height: 2000px;
 display: flex;
 justify-content: space-between;
 align-items: center;
+}
+.custom-alert {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  margin: 10px auto;
+  width: 300px;
+}
+
+.custom-alert button {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+a{
+  text-decoration: none;
+  color: red;
 }
